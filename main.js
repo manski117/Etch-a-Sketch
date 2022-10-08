@@ -34,7 +34,7 @@ function selectSize(){
         message.innerText ="Please only provide a number between 1 and 100"
     } else {
         message.innerText =`You selected a ${userInput} x ${userInput} sized grid for your canvas`
-        return userInput;
+        generateCanvas(userInput);
     } 
 
 }
@@ -51,6 +51,7 @@ const buttonPress = e =>{
     alert(`button ${buttonID} was pressed`);
     switch(buttonID){
         case "modify-grid":
+            
             selectSize();
             break;
         
