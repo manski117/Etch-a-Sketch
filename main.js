@@ -1,6 +1,6 @@
 //wait until the HTML and CSS are loaded before you run the javascript
 document.addEventListener("DOMContentLoaded", function(){
-    generateCanvas(32);
+    generateCanvas(16);
     console.log("dom content is loaded");
     
 });
@@ -17,7 +17,11 @@ function generateCanvas(gridSize){
     for(let i = 0; i < divsTotal; i++){
         let div = document.createElement("div");
         div.style.backgroundColor="blue";
-        
+        //this will allow our divs to change color when hovered over
+        div.addEventListener("mouseover", function(){
+            div.style.backgroundColor="black";
+        })
+
         canvas.insertAdjacentElement("beforeend", div);
     }
 }
@@ -26,8 +30,8 @@ function selectSize(){
     //has the user type a number and returns that number, but only if it is between 0 and 100
     let userInput = prompt("What should be the size of the board?")
     let message = document.querySelector("#message")
-    alert(message);
-    if (!Number.isInteger(userInput)) alert("ERROR, NaN");
+    
+    
     if (userInput == ""){
         message.innerText = "Please provide a number only";
     } else if(userInput < 0 || userInput > 100){
