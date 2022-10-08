@@ -22,6 +22,7 @@ h3 {
     margin: 20px;
     border: solid;
     border-color: black;
+    flex-direction: column;
 
 }
 
@@ -47,6 +48,7 @@ h3 {
     list-style: none;
     flex-direction: row;
     gap: 20px;
+    
     
 
 }
@@ -91,13 +93,15 @@ h3 {
 
 
 .main-grid-container{
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     padding: 10px;
     margin: 20px;
     border: solid;
     border-color: red;
+    width: 500px;
+    height: 500px;
 }
 
 .bottom-text{
