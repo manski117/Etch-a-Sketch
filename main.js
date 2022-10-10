@@ -68,5 +68,26 @@ reset.addEventListener('click', function(){
      
 });
 
+//black button
+const black = document.querySelector('#black-button');
+black.addEventListener('click', function(){
+     
+     currentColor = "black";
+});
+
+//red button
+const red = document.querySelector('#red-button');
+red.addEventListener('click', function(){
+     
+     currentColor = "red";
+});
+
+//blue button
+const blue = document.querySelector('#blue-button');
+blue.addEventListener('click', function(){
+     
+     currentColor = "blue";
+});
+
 
 promptSize();
