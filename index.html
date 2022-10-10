@@ -1,30 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" media="all">
+    <title>Etch-a-Sketch</title>
 </head>
 <body>
-    <div class="flex-container">
-        <div class="title"><h1>SketchPad</h1></div>
-        <div class="content">
-            <div class="board"></div>
-            <div class="buttons">
-                <button>Black</button>
-                <button>White</button>
-                <button>Random</button>
-                <button>Reset</button>
-            </div>
-            <div>
-                <input type="text" placeholder="Size of Board" value="16"/>
-                <button>Set Size</button>
-            </div>
-        </div>
+    <h1>Mike's Etch-a-Sketch</h1>
+    <div id='button-flexbox'> 
+      <button id='reset-button' >Reset</button>
+      <button id='black-button' >Black</button>
+      <button id='red-button' >Red</button>
+      <button id='blue-button' >Blue</button>
     </div>
     
+    <div id='sketchpad-flexbox'>
+      <div id='container'></div>
+    </div>
+      
 </body>
-<script src="main.js"></script>
+
+  <script src ="main.js"></script>
+  
 </html>
