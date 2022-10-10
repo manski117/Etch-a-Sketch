@@ -12,17 +12,20 @@ function generateCanvas(gridSize){
     canvas.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
     canvas.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
     alert("canvas should be generated");
+    // style.insertRule(`.grid-item {height: ${gridSize}}`,0);
 
     let divsTotal = (gridSize * gridSize);
     for(let i = 0; i < divsTotal; i++){
         let div = document.createElement("div");
+        div.classList.add("grid-item");
         div.style.backgroundColor="blue";
+        
         //this will allow our divs to change color when hovered over
         div.addEventListener("mouseover", function(){
             div.style.backgroundColor="black";
         })
 
-        canvas.insertAdjacentElement("beforeend", div);
+        canvas.appendChild(div);
     }
 }
 
