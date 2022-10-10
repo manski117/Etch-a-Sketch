@@ -1,11 +1,25 @@
-let board = document.querySelector('.board');
-board.getElementsByClassName.gridTemplateColumns = "repeat(16, 1fr)";
-board.getElementsByClassName.gridTemplateRows = "repeat(16, 1fr)";
+const container = document.querySelector('#container');
+let square;
+let target; 
+let currentColor = "black";
 
-for(let i = 0; i < 256; i++){
-    //loops 256 (16x16) times to make a grid of divs
-    let square = document.createElement("div");
-    square.style.backgroundColor = "green";
-    //inserts the divs starting in the board class element
-    board.insertAdjacentElement("beforeend", square);
-}
+
+function promptSize() {
+    let number = prompt("Choose a grid size between 1-75 for your sketchpad", 16); 
+     if (number >= 1 && number <= 75) {
+        alert(`${number}`)
+     }else {
+         do {number = prompt("Invalid input. Provide a number between 1-75 plese.");
+         }
+         while(number < 1 || number > 75);
+         //this loop makes it so that the user will be trapped with further prompts until they provide one in an acceptable range. 
+         alert(`${number}`)
+
+     }
+ }
+
+
+
+
+
+promptSize();
