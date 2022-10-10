@@ -44,7 +44,7 @@ h1 {
   
 #sketchpad-flexbox{
     display: flex;
-    /* border: black solid 16px; */
+    
     background-color: white;
     align-items: center;
     justify-content: center;
