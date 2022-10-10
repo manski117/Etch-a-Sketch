@@ -60,5 +60,13 @@ container.addEventListener("mouseover", function (e) {
     }
 });
 
+//reset button
+const reset = document.querySelector('#reset-button');
+//map an inline function to the reset button that will refresh the page and therefore prompt the player again.
+reset.addEventListener('click', function(){
+     location.reload();
+     
+});
+
 
 promptSize();
