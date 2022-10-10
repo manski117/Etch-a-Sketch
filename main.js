@@ -43,5 +43,22 @@ function makeSquares (squareNumber) {
 
 
 
+//change color when mouse overs over square 
+function changeColor (target) {
+    
+    target.style.backgroundColor = `${currentColor}`;
+}
+
+//use function(e) to set "target" to the specific item that was targeted by the mouse. 
+//now target == the div that was just hovered over
+container.addEventListener("mouseover", function (e) {
+    target = e.target;
+
+    //only change the color if the element you moused-over is a div with a square class
+    if (target.matches("div.square")) {
+        changeColor(target);
+    }
+});
+
 
 promptSize();
