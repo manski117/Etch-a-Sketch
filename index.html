@@ -5,47 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Mike's Etch-A-Sketch</title>
+    <title>Document</title>
 </head>
 <body>
-    <div class ="title header">
-        <h3>The html is working but what about CSS</h3>
-        <p id="message">(messages from main.js will print here)</p>
-    </div>
-
-    <div class="main-program-space">
-        <ul class="buttons-flexbox">
-            <li><button id="modify-grid" class="button modify-grid">Modify Grid</span></button></li>
-            <li><button id="black" class="button black">Black</button></li>
-            <li><button id="red" class="button red">Red</button></li>
-            <li><button id="reset" class="button reset">Reset</button></li>
-        </ul>
-
-        <div class="main-grid-container">
-            
-        </div>
-
-        <div class="bottom-text">
-            <h3>XXXXX bottom text XXXXX</h3>
-        </div>
-
-    </div>
-
-    <div class="footer-flexbox">
-        <div class="footer">
-            <h3>XXXXX footer XXXXX</h3>
+    <div class="flex-container">
+        <div class="title"><h1>SketchPad</h1></div>
+        <div class="content">
+            <div class="board"></div>
+            <div class="buttons">
+                <button>Black</button>
+                <button>White</button>
+                <button>Random</button>
+                <button>Reset</button>
+            </div>
+            <div>
+                <input type="text" placeholder="Size of Board" value="16"/>
+                <button>Set Size</button>
+            </div>
         </div>
     </div>
-
-
-
-
-
-
+    
 </body>
-
-<script src="main.js">
-
-</script>
-
+<script src="main.js"></script>
 </html>
