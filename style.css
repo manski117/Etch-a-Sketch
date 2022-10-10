@@ -8,9 +8,59 @@ body{
 }
 
 
+#button-flexbox {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
 /* button styling to go here */
 
+#container {
+    display: grid;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    margin:auto;
+    /* repeat((number of columns the grid will be divided into), how big should they be (keep this 1fr) */
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: repeat(var(--rows), 1fr);
+    border: black solid 10px;
+    
+}
 
+h1 {
+    
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    display: flex;
+    margin:auto;
+    justify-content: center;
+    font-size: 50px;
+    
+  }
+  
+#sketchpad-flexbox{
+    display: flex;
+    border: black solid 16px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    height: 700px;
+    width: 700px;
+    
+    
+    
+}
+.square {
+    
+    padding: 3px;
+    border: 1px solid black;
+    background-color: rgb(145, 145, 145);
+}
 
 /* makes the background look cool */
 @keyframes gradient {
